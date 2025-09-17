@@ -105,10 +105,10 @@ function SitesSupported(){
 function Why(){
   const base = 'assets/Images/whywinbuzz/';
   const items = [
-    {icon:'secureLogov2.webp', title:'100% Secure', sub:'Protection'},
-    {icon:'languageLogov2.webp', title:'9+ Sites', sub:'Play Everywhere'},
-    {icon:'customerSupportLogov2.webp', title:'24x7', sub:'Support'},
-    {icon:'userCountLogoV2_updated.webp', title:'Trusted by Players', sub:'Growing Community'},
+    {icon:'secureLogov2.webp', title:'100% Secure'},
+    {icon:'languageLogov2.webp', title:'9+ Sites'},
+    {icon:'customerSupportLogov2.webp', title:'24x7 Support'},
+    {icon:'userCountLogoV2_updated.webp', title:'Trusted Site'},
   ];
   return (
     <section className="why" aria-labelledby="why-title">
@@ -119,7 +119,7 @@ function Why(){
             <div className="why-card" role="listitem" key={i}>
               <img src={`${base}${it.icon}`} alt="" />
               <div className="why-title">{it.title}</div>
-              <div className="why-sub">{it.sub}</div>
+              
             </div>
           ))}
         </div>
@@ -162,9 +162,9 @@ function App(){
           </a>
         </div>
       </div>
-      <div className="reveal"><Why/></div>
       <div className="reveal"><Bonuses/></div>
       <div className="reveal"><SitesSupported/></div>
+      <div className="reveal"><Why/></div>
       <div className="prefooter">
         <div className="container" style={{textAlign:'center'}}>
           <a className="cta" href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener" aria-label="WhatsApp - Get Your ID Now">
