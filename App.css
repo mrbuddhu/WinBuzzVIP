@@ -267,6 +267,13 @@ footer .cta { margin-left: auto; }
   .sites-grid { grid-template-columns: repeat(3, minmax(0,1fr)); }
   .why-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
 }
+
+/* iPad Pro range: let hero height follow image height */
+@media (min-width: 1024px) and (max-width: 1112px){
+  .hero { min-height: auto; }
+  .hero .hero-media { height: auto; }
+  .hero .hero-media img { height: auto; width: 100%; max-width: 100%; }
+}
 @media (max-width: 520px){
   .nav-links .hide-sm { display:none; }
   .sites-grid { grid-template-columns: repeat(2, minmax(0,1fr)); justify-items: center; }
