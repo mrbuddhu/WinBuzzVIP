@@ -77,8 +77,8 @@ function Bonuses(){
 
 function SitesSupported(){
   const base = 'assets/Images/partner/';
-  const logos = [
-    'BetBhai9.jpg','Cricbet99.jpg','Deal2026.jpg','fairplay.jpg','laser247.jpg','lotus365.jpg','MyTiger247.jpg','Target666.jpg','WinBuzz.jpg'
+  const partners = [
+    'BetBhai9','Cricbet99','Deal2026','fairplay','laser247','lotus365','MyTiger247','Target666','WinBuzz'
   ];
   return (
     <section id="features" className="sites" aria-labelledby="sites-title">
@@ -86,9 +86,14 @@ function SitesSupported(){
         <h2 id="sites-title">9+ Sites Supported</h2>
         <p className="muted">Use a single gaming ID seamlessly across all supported platforms.</p>
         <div className="sites-grid" role="list">
-          {logos.map((name, idx) => (
+          {partners.map((name, idx) => (
             <div className="site-card" role="listitem" key={idx}>
-              <img src={`${base}${name}`} alt={name.replace(/\..+$/, '')} loading="lazy" />
+              <img
+                src={`${base}${name}-removebg-preview.png`}
+                alt={name}
+                loading="lazy"
+                onError={(e)=>{ const fallback = `${base}${name}.jpg`; if(e.currentTarget.src !== fallback){ e.currentTarget.src = fallback; } }}
+              />
             </div>
           ))}
         </div>
@@ -128,7 +133,7 @@ function Footer(){
     <footer id="contact" role="contentinfo">
       <div className="container row">
         <div className="brand">
-          <img src="assets/Images/title.png" alt="WinBuzzVIP" />
+          <img src="assets/Images/logo.png" alt="WinBuzzVIP" />
           <span className="sr-only">WinBuzzVIP</span>
         </div>
         <div className="copy" aria-label="Copyright">© 2025 WinBuzzVIP. All rights reserved.</div>

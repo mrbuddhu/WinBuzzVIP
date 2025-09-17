@@ -73,7 +73,7 @@ html { scroll-behavior: smooth; }
   transition: transform .18s ease, box-shadow .18s ease, filter .18s ease;
   will-change: transform, box-shadow;
 }
-.cta:hover { filter: brightness(1.05); transform: translateY(-3px) scale(1.035); box-shadow: 0 14px 30px rgba(32,182,87,.45); }
+.cta:hover { filter: brightness(1.06); transform: translateY(-5px) scale(1.06); box-shadow: 0 20px 40px rgba(32,182,87,.5); color:#ffffff; }
 .cta:focus { outline: 2px solid #fff; outline-offset: 2px; }
 
 .cta .wa {
@@ -183,7 +183,7 @@ html { scroll-behavior: smooth; }
 
 /* Subtle hover accents */
 .why-card:hover img { transform: translateY(-2px) scale(1.03); transition: transform .18s ease; }
-.cta:hover { transform: translateY(-3px) scale(1.035); }
+.cta:hover { transform: translateY(-5px) scale(1.06); }
 .cta:active { transform: translateY(0) scale(0.995); box-shadow: 0 4px 10px rgba(32,182,87,.3); }
 
 /* Motion safety */
