@@ -65,8 +65,8 @@ function Bonuses(){
           <p className="muted" style={{marginTop:12}}>Exclusive for new users on first deposit</p>
         </div>
         <div>
-          <div className="counter" aria-label="Every Deposit Bonus">
-            <span style={{color:'var(--gold-500)'}}>{percent}%</span> Every Deposit Bonus
+          <div className="badge badge-indigo" aria-label="Every Deposit Bonus">
+            <span style={{fontWeight:900}}>{percent}%</span> Every Deposit Bonus
           </div>
           <p className="muted">Automatically applied on each successful top-up</p>
         </div>
@@ -156,7 +156,6 @@ function App(){
       <Hero/>
       <div className="callout">
         <div className="container">
-          <div className="text">Get Your ID Now</div>
           <a className="cta" href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener" aria-label="WhatsApp - Get Your ID Now">
             <svg className="wa" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.52 3.48A11.86 11.86 0 0 0 12.06 0C5.49 0 .2 5.29.2 11.86c0 2.09.55 4.09 1.6 5.87L0 24l6.46-1.69a11.8 11.8 0 0 0 5.6 1.43h.01c6.56 0 11.86-5.29 11.86-11.86 0-3.18-1.24-6.17-3.41-8.4ZM12.07 21.3h-.01a9.5 9.5 0 0 1-4.84-1.33l-.35-.2-3.83 1 1.02-3.73-.22-.38a9.44 9.44 0 0 1-1.45-5.11c0-5.23 4.26-9.48 9.49-9.48 2.54 0 4.93.99 6.72 2.78a9.43 9.43 0 0 1 2.78 6.71c0 5.23-4.26 9.49-9.49 9.49Zm5.5-7.1c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.31-.77.97-.95 1.17-.18.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.73-1.64-2.03-.17-.3-.02-.47.13-.62.13-.13.3-.35.45-.52.15-.18.2-.31.3-.52.1-.2.05-.38-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.5-.5-.67-.51h-.57c-.2 0-.52.07-.8.38-.27.31-1.05 1.03-1.05 2.52s1.08 2.92 1.23 3.12c.15.2 2.12 3.24 5.14 4.55.72.31 1.28.5 1.72.64.72.23 1.38.2 1.9.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.18-1.43-.07-.12-.27-.2-.57-.35Z"/></svg>
             <span>Get Your ID Now</span>
@@ -166,6 +165,14 @@ function App(){
       <div className="reveal"><Why/></div>
       <div className="reveal"><Bonuses/></div>
       <div className="reveal"><SitesSupported/></div>
+      <div className="prefooter">
+        <div className="container" style={{textAlign:'center'}}>
+          <a className="cta" href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener" aria-label="WhatsApp - Get Your ID Now">
+            <svg className="wa" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.52 3.48A11.86 11.86 0 0 0 12.06 0C5.49 0 .2 5.29.2 11.86c0 2.09.55 4.09 1.6 5.87L0 24l6.46-1.69a11.8 11.8 0 0 0 5.6 1.43h.01c6.56 0 11.86-5.29 11.86-11.86 0-3.18-1.24-6.17-3.41-8.4ZM12.07 21.3h-.01a9.5 9.5 0 0 1-4.84-1.33l-.35-.2-3.83 1 1.02-3.73-.22-.38a9.44 9.44 0 0 1-1.45-5.11c0-5.23 4.26-9.48 9.49-9.48 2.54 0 4.93.99 6.72 2.78a9.43 9.43 0 0 1 2.78 6.71c0 5.23-4.26 9.49-9.49 9.49Zm5.5-7.1c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.31-.77.97-.95 1.17-.18.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.73-1.64-2.03-.17-.3-.02-.47.13-.62.13-.13.3-.35.45-.52.15-.18.2-.31.3-.52.1-.2.05-.38-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.5-.5-.67-.51h-.57c-.2 0-.52.07-.8.38-.27.31-1.05 1.03-1.05 2.52s1.08 2.92 1.23 3.12c.15.2 2.12 3.24 5.14 4.55.72.31 1.28.5 1.72.64.72.23 1.38.2 1.9.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.18-1.43-.07-.12-.27-.2-.57-.35Z"/></svg>
+            <span>Get Your ID Now</span>
+          </a>
+        </div>
+      </div>
       <Footer/>
       <div className="fab" aria-label="Social quick actions">
         <a className="wa" href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener" aria-label="WhatsApp">
