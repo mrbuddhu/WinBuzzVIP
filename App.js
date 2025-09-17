@@ -192,13 +192,11 @@ function App(){
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<App/>);
 
-// Dynamic overlay generator from filenames in assets/Images
-// This runs after render to replace the hero ::before background with a dense scatter of names
 ;(function generateHeroOverlay(){
   const labels = [
     'BETBHAI9','CRICKET99','FAIRPLAY','LASER247','LOTUS365','MYTIGER247','WINBUZZ','TARGET666','DEAL2026'
   ];
-  const tile = 600; // denser repetition
+  const tile = 600;
   let svg = `<svg xmlns='http://www.w3.org/2000/svg' width='${tile}' height='${tile}'>`+
             `<defs>
                <filter id='blur'><feGaussianBlur stdDeviation='0.8'/></filter>
@@ -209,7 +207,6 @@ root.render(<App/>);
                </linearGradient>
              </defs>`+
             `<style>text{font-family:Saira,Arial,sans-serif;font-weight:900;fill:url(%23fade);filter:url(%23blur)}</style>`;
-  // arrange labels in grid with slight jitter; left-biased like reference; avoid overlap inside cells
   const cols = 3, rows = 4; const cellW = Math.floor(tile/cols); const cellH = Math.floor(tile/rows);
   const shuffled = labels.slice().sort(()=>Math.random()-0.5);
   let k = 0;

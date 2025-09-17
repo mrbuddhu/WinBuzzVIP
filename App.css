@@ -21,13 +21,11 @@ body {
 }
 html { scroll-behavior: smooth; }
 
-/* Layout helpers */
 .container {
   width: min(1200px, 92%);
   margin: 0 auto;
 }
 
-/* Navbar */
 .navbar {
   position: fixed;
   top: 0;
@@ -82,25 +80,19 @@ html { scroll-behavior: smooth; }
   width: 18px; height: 18px; display:inline-block;
 }
 
-/* Subtle continuous zoom animation for all CTAs */
 @keyframes ctaPulse {
   0% { transform: scale(1); }
   50% { transform: scale(1.06); }
   100% { transform: scale(1); }
 }
 
-/* Hero */
 .hero {
-  padding-top: 64px; /* compensate fixed nav */
+  padding-top: 64px;
   position: relative;
   background: 
-    /* soft orange wash with forward-slash (/) diagonal division */
     linear-gradient(60deg, rgba(255,106,61,0.35) 0%, rgba(255,106,61,0.28) 32%, rgba(255,106,61,0.10) 52%, rgba(255,106,61,0.0) 53%),
-    /* warm orange hotspot */
     radial-gradient(800px 520px at 14% 28%, #ff6a3d 0%, rgba(255,106,61,0.0) 60%),
-    /* indigo bloom on right */
     radial-gradient(1300px 700px at 80% 25%, #4f2fd6 0%, rgba(79,47,214,0) 62%),
-    /* base */
     linear-gradient(180deg, #2a1340 0%, #1a1036 100%);
   min-height: 68vh;
 }
@@ -111,7 +103,6 @@ html { scroll-behavior: smooth; }
   top: 0; left: 0; bottom: 0; width: 60%;
   pointer-events: none;
   opacity: .5;
-  /* limit overlay to the left portion with a forward-slash diagonal edge */
   clip-path: polygon(0 0, 100% 0, 72% 100%, 0% 100%);
   z-index: 0;
 }
